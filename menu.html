@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Resource Coffee House</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="header__logo">
+          <img src="assets/logo.png" alt="Resource Coffee House">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="index.html#favorite" class="header__menu-link">Favorite coffee
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="index.html#about" class="header__menu-link">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="index.html#mobile-app" class="header__menu-link">
+                Mobile app
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#contacts" class="header__menu-link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="theme-switcher" type="button" aria-label="Switch color theme">
+            <span class="theme-switcher__sun">
+              <img src="assets/sun.png" alt="sun">
+            </span>
+            <span class="theme-switcher__moon">
+              <img src="assets/moon.png" alt="moon">
+            </span>
+          </button>
+          <a class="menu-link menu-link--active" href="menu.html">
+            <span>Menu</span>
+            <span class="menu-link__icon">
+              <img src="assets/coffee-cup.png" alt="coffee">
+            </span>
+          </a>
+          <button class="header__burger" type="button" aria-label="Open navigation menu">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="menu-page">
+        <div class="container">
+          <h1 class="menu-page__title"> Behind each of our cups
+            <span class="menu-page__accent">hides an amazing surprise</span>
+          </h1>
+          <div class="menu-page__tabs-wrapper">
+            <input class="menu-page__radio" id="coffee" type="radio" name="menu-category" checked>
+            <input class="menu-page__radio" id="tea" type="radio" name="menu-category">
+            <input class="menu-page__radio" id="dessert" type="radio" name="menu-category">
+            <div class="menu-page__tabs">
+              <label class="menu-page__tab" for="coffee">
+                <span class="menu-page__tab-icon">
+                  <img src="assets/cofee.png" alt="cofee">
+                </span>
+                <span>Coffee</span>
+              </label>
+              <label class="menu-page__tab" for="tea">
+                <span class="menu-page__tab-icon">
+                  <img src="assets/tea.png" alt="tea">
+                </span>
+                <span>Tea</span>
+              </label>
+              <label class="menu-page__tab" for="dessert">
+                <span class="menu-page__tab-icon">
+                  <img src="assets/dessert.png" alt="">
+                </span>
+                <span>Dessert</span>
+              </label>
+            </div>
+            <div class="menu-page__grid menu-page__grid--coffee">
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-1.jpg" alt="Irish coffee">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Irish coffee</h2>
+                  <p class="product-card__description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                  <p class="product-card__price">$7.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-2.jpg" alt="Kahlua coffee">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Kahlua coffee</h2>
+                  <p class="product-card__description">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                  <p class="product-card__price">$7.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-3.jpg" alt="Honey raf">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Honey raf</h2>
+                  <p class="product-card__description">Espresso with frothed milk, cream and aromatic honey</p>
+                  <p class="product-card__price">$5.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-4.jpg" alt="Ice cappuccino">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Ice cappuccino</h2>
+                  <p class="product-card__description">Cappuccino with soft thick foam in summer version with ice</p>
+                  <p class="product-card__price">$5.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-5.jpg" alt="Espresso">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Espresso</h2>
+                  <p class="product-card__description">Classic black coffee</p>
+                  <p class="product-card__price">$4.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-6.jpg" alt="Latte">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Latte</h2>
+                  <p class="product-card__description">
+                    Espresso coffee with the addition of steamed milk and dense milk foam
+                  </p>
+                  <p class="product-card__price">$5.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-7.jpg" alt="Latte macchiato">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Latte macchiato</h2>
+                  <p class="product-card__description">Espresso with frothed milk and chocolate</p>
+                  <p class="product-card__price">$5.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/coffee-8.jpg" alt="Coffee with cognac">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Coffee with cognac</h2>
+                  <p class="product-card__description">Fragrant black coffee with cognac and whipped cream</p>
+                  <p class="product-card__price">$6.50</p>
+                </div>
+              </article>
+            </div>
+            <div class="menu-page__grid menu-page__grid--tea">
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/tea-1.png" alt="Moroccan tea">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Moroccan</h2>
+                  <p class="product-card__description">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and mint</p>
+                  <p class="product-card__price">$4.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/tea-2.png" alt="Ginger tea">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Ginger</h2>
+                  <p class="product-card__description">Original black tea with fresh ginger, lemon and honey</p>
+                  <p class="product-card__price">$5.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/tea-3.png" alt="Sea buckthorn tea">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Cranberry</h2>
+                  <p class="product-card__description">Invigorating black tea with cranberry and honey</p>
+                  <p class="product-card__price">$5.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/tea-4.png" alt="Berry tea">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Sea buckthorn</h2>
+                  <p class="product-card__description">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</p>
+                  <p class="product-card__price">$4.50</p>
+                </div>
+              </article>
+            </div>
+            <div class="menu-page__grid menu-page__grid--dessert">
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-1.png" alt="Marble cheesecake">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Marble cheesecake</h2>
+                  <p class="product-card__description">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam</p>
+                  <p class="product-card__price">$3.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-2.png" alt="Red velvet">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Red velvet</h2>
+                  <p class="product-card__description">Layer cake with cream cheese frosting</p>
+                  <p class="product-card__price">$4.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-3.png" alt="Cheesecakes">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Cheesecakes</h2>
+                  <p class="product-card__description">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled with powdered sugar</p>
+                  <p class="product-card__price">$4.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-4.png" alt="Creme brulee">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Creme brulee</h2>
+                  <p class="product-card__description">Delicate creamy dessert in a caramel basket with wild berries</p>
+                  <p class="product-card__price">$4.00</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-5.png" alt="Pancakes">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Pancakes</h2>
+                  <p class="product-card__description">Tender pancakes with strawberry jam and fresh strawberries
+                  </p>
+                  <p class="product-card__price">$4.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-6.png" alt="Honey cake">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Honey cake</h2>
+                  <p class="product-card__description">Classic honey cake with delicate custard</p>
+                  <p class="product-card__price">$4.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-7.png" alt="Chocolate cake">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Chocolate cake</h2>
+                  <p class="product-card__description">Cake with hot chocolate filling and nuts with dried apricots</p>
+                  <p class="product-card__price">$5.50</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image-wrapper">
+                  <img class="product-card__image" src="assets/dessert-8.png" alt="Black forest">
+                </div>
+                <div class="product-card__content">
+                  <h2 class="product-card__title">Black forest</h2>
+                  <p class="product-card__description">A combination of thin sponge cake with cherry jam and light chocolate mousse</p>
+                  <p class="product-card__price">$6.50</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <div class="footer__offer">
+          <h2 class="footer__title">
+            Sip, Savor, Smile.
+            <span class="footer__accent">It’s coffee time!</span>
+          </h2>
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="twitter.com" aria-label="Twitter">
+                <img src="assets/twitter.svg" alt="t">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="instagram.com" aria-label="Instagram">
+                <img src="assets/instagram.svg" alt="i">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="facebook.com" aria-label="Facebook">
+                <img src="assets/facebook.svg" alt="f">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h3 class="footer__contacts-title">Contact us</h3>
+          <address class="footer__contacts-list">
+            <a
+              class="footer__contact-link"
+              href="https://maps.google.com/?q=8558+Green+Rd,+LA"
+              target="_blank"
+              rel="noopener noreferrer">
+              <span class="footer__contact-icon">
+                <img src="assets/pin-alt.svg" alt="">
+              </span>
+              <span>8558 Green Rd., LA</span>
+            </a>
+            <a class="footer__contact-link" href="tel:+16035550123">
+              <span class="footer__contact-icon">
+                <img src="assets/phone.svg" alt="">
+              </span>
+              <span>+1 (603) 555-0123</span>
+            </a>
+            <p class="footer__contact-link">
+              <span class="footer__contact-icon">
+                <img src="assets/clock.svg" alt="">
+              </span>
+              <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
