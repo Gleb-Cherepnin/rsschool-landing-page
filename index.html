@@ -15,53 +15,61 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header__container">
-      <a class="header__logo" href="#">
-        <img src="assets/logo.png" alt="Coffee House logo">
+<header class="header">
+  <div class="container header__container">
+    <a class="header__logo" href="#">
+      <img src="assets/logo.png" alt="Coffee House logo">
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#favorite">Favorite coffee</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#about">About</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#mobile-app">Mobile app</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#contacts">Contact us</a>
+        </li>
+      </ul>
+
+      <a class="header__mobile-menu-link" href="menu.html">
+        <span>Menu</span>
+        <span class="menu-link__icon">
+          <img src="assets/coffee-cup.png" alt="">
+        </span>
       </a>
+    </nav>
 
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#favorite">Favorite coffee</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#about">About</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#mobile-app">Mobile app</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#contacts">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header__actions">
+    <div class="header__actions">
         <button class="theme-switcher" type="button" aria-label="Switch color theme">
           <span class="theme-switcher__sun">
-            <img src="assets/sun.png" alt="Sun">
+            <img src="assets/Sun.png" alt="Light theme">
           </span>
+
           <span class="theme-switcher__moon">
-            <img src="assets/moon.png" alt="Moon">
+            <img src="assets/Moon.svg" alt="Dark theme">
           </span>
         </button>
 
-        <a class="menu-link" href="menu.html">
-          <span>Menu</span>
-          <span class="menu-link__icon">
-            <img src="assets/coffee-cup.png" alt="">
-          </span>
-        </a>
+      <a class="menu-link" href="menu.html">
+        <span>Menu</span>
+        <span class="menu-link__icon">
+          <img src="assets/coffee-cup.png" alt="">
+        </span>
+      </a>
 
-        <button class="header__burger" type="button" aria-label="Toggle menu">
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-        </button>
-      </div>
+      <button class="header__burger" type="button" aria-label="Toggle menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
     <div class="main_container">
